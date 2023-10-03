@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Tickets</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('assets/ba2.jpg');
+            background-size: cover;
+            background-blur: 10px;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .formulario {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 200%;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        /* Estilos para los campos de formulario */
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 480px;
+            padding: 10px;
+            margin-bottom: 35px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .custom-select {
+            position: relative;
+          
+        }
+
+        .custom-select::after {
+            content: '\25BC';
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        .custom-textarea {
+            resize: vertical;
+        }
+
+        /* Estilo para el botón */
+        .btn-secondary {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn-secondary:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <h2>Compra de Tickets para el Evento</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Escribe tu correo electrónico">
+                </div>
+                <div class="mb-3">
+                    <label for="cantidad" class="form-label">Cantidad de Tickets</label>
+                    <input type="number" class="form-control" id="cantidad" min="1" placeholder="Selecciona la cantidad de tickets">
+                </div>
+                <div class="mb-3">
+                    <label for="metodoPago" class="form-label">Método de Pago</label>
+                    <select class="form-select" id="metodoPago">
+                        <option value="tarjeta">Tarjeta de Crédito</option>
+                        <option value="paypal">Mercado Pago</option>
+                        <option value="transferencia">Transferencia Bancaria</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="comentarios" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="comentarios" rows="4" placeholder="Agrega comentarios adicionales"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Comprar Tickets</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
