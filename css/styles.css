@@ -92,16 +92,16 @@
 }
 
 
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: right; /* Alinea el texto a la derecha */
-  color: white; /* Cambia el color del texto a blanco */
-  background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo semi-transparente */
-  padding: 20px; /* Espaciado interno para el texto */
+/* Estilos para el header overlay */
+.header-overlay {
+
+
+
+  background-color: rgba(0, 0, 0, 0.6); /* Color de fondo oscuro semitransparente */
+
+
 }
+
 
 .logo{
   width: 30%;
@@ -126,11 +126,11 @@ margin-right: 70px;
 }
 
 
-.foto{
-
-  width: 300px; /* Cambia este valor al tamaño deseado */
-  height: 300px; /* Cambia este valor al tamaño deseado */
+.img-orador {
+  width: 100%; /* Establece el ancho al 100% */
+  height: auto; /* Mantiene la proporción de aspecto */
 }
+
 
 .fondo{
 width: 100%;
